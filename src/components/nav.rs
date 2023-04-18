@@ -12,7 +12,7 @@ pub fn Nav(cx: Scope) -> impl IntoView {
                         </h2>
                     </a>
                     <div class="items-center gap-6 hidden md:flex font-mplus">
-                        <a>"About"</a>
+                        <a href="/posts">"Posts"</a>
                     </div>
                     <div class="flex-1"></div>
                     <a>"dipshit"</a>

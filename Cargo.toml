@@ -24,6 +24,10 @@ wasm-bindgen = "0.2"
 thiserror = "1.0.38"
 http = "0.2.8"
 tracing = "0.1.37"
+serde = "1.0.160"
+serde_yaml = "0.9.21"
+glob = "0.3.1"
+gray_matter = "0.2.6"
 
 [features]
 hydrate = ["leptos/hydrate", "leptos_meta/hydrate", "leptos_router/hydrate"]

@@ -10,8 +10,10 @@ pub mod handlers;
 
 mod routes;
 use routes::main::*;
+use routes::posts::*;
 
 mod components;
+use components::masthead::*;
 use components::nav::*;
 
 #[component]
@@ -26,10 +28,11 @@ pub fn App(cx: Scope) -> impl IntoView {
             <Meta name="description" content="My own blog made with Rust and Leptos" />
             <Router>
                 <Nav />
+                <Masthead />
                 <main>
                     <Routes>
                         <Route path="" view=|cx| view! { cx, <Main/> }/>
-
+                        <Route path="posts" view=|cx| view! { cx, <Posts/> }/>
                     </Routes>
                 </main>
             </Router>
