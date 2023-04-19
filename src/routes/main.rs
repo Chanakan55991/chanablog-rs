@@ -1,5 +1,4 @@
 use crate::components::content::*;
-use crate::components::masthead::*;
 use leptos::{component, view, IntoView, Scope};
 
 #[component]
